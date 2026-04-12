@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# SCEN-018 strict pre-push hook.
+# Refuses any push that is not invoked from publish.py.
+set -eu
+if [ "${PUBLISH_PY_INVOCATION:-}" != "1" ]; then
+  printf 'pre-push: direct pushes are forbidden. Run scripts/publish.py instead.\n' >&2
+  exit 1
+fi
+exit 0
