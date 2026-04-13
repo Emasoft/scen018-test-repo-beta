@@ -1,7 +1,7 @@
 [project]
-name = "scen018-test-fixture"
+name = "scenario-fixture"
 version = "0.1.0"
-description = "SCEN-018 MAINTAINER lifecycle test fixture (safe to ignore)"
+description = "Scenario test fixture — safe to ignore"
 requires-python = ">=3.12"
 dependencies = ["pytest>=8"]
 
